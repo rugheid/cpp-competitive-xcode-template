@@ -10,10 +10,15 @@
 
 int main(int argc, const char * argv[]) {
     
-    #ifdef USE_INPUT_AND_OUTPUT_FILES
+    #ifdef USE_INPUT_FILE
     freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
     #endif
+    
+    // MAIN Begin
+    
+    <#Write your code here...#>
+    
+    // MAIN End
     
     return 0;
 }
