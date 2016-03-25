@@ -1,0 +1,1 @@
+The diff output can say there are differences if you don't include a newline at the end of this file.
