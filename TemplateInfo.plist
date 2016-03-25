@@ -21,7 +21,7 @@
 			<key>ProductType</key>
 			<string>com.apple.product-type.tool</string>
 			<key>TargetIdentifier</key>
-			<string>com.apple.dt.commandLineToolTarget</string>
+			<string>com.rugenheidbuchel.dt.competitiveProgrammingCommandLineToolTarget</string>
 			<key>BuildPhases</key>
 			<array>
 				<dict>
@@ -43,19 +43,55 @@
 					<string>YES</string>
 				</dict>
 			</array>
-		</dict>
-	</array>
-	<key>Project</key>
-	<dict>
-		<key>Configurations</key>
-		<dict>
-			<key>Debug</key>
+			<key>SharedSettings</key>
 			<dict>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<key>USE_INPUT_AND_OUTPUT_FILES=1 DEBUG=1 $(inherited)</key>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
 			</dict>
 		</dict>
-	</dict>
+		<dict>
+			<key>Name</key>
+			<string>___PACKAGENAME___ (Using input.txt)</string>
+			<key>ProductType</key>
+			<string>com.apple.product-type.tool</string>
+			<key>TargetIdentifier</key>
+			<string>com.rugenheidbuchel.dt.competitiveProgrammingCommandLineToolTargetUsingInputFile</string>
+			<key>BuildPhases</key>
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>Sources</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>Frameworks</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>CopyFiles</string>
+					<key>DstPath</key>
+					<string></string>
+					<key>DstSubfolderSpec</key>
+					<string>16</string>
+					<key>RunOnlyForDeploymentPostprocessing</key>
+					<string>YES</string>
+				</dict>
+			</array>
+			<key>Configurations</key>
+			<dict>
+				<key>Debug</key>
+				<dict>
+					<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+					<key>USE_INPUT_AND_OUTPUT_FILES=1 $(inherited)</key>
+				</dict>
+			</dict>
+			<key>SharedSettings</key>
+			<dict>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+		</dict>
+	</array>
 	<key>Nodes</key>
 	<array>
 		<string>main.cpp</string>
