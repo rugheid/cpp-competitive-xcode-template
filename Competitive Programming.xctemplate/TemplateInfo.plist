@@ -14,7 +14,7 @@
 	<key>Concrete</key>
 	<true/>
 	<key>Description</key>
-	<string>This template creates a command-line tool for competitive programming. It provides mulitple input and output files for testing purposes and defines some handy macros.</string>
+	<string>This template creates a command-line tool for competitive programming. It provides two targets. The first target is a regular command-line tool. The second target redirects the stadard input to read from an input file. This way you can easily switch between testing with manual input or from an input file.</string>
 	<key>Targets</key>
 	<array>
 		<dict>
