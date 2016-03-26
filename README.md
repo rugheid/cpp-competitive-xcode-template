@@ -8,7 +8,7 @@ The simple template defines two targets. The normal target just runs as a normal
 
 ## Expected Output Template
 __You can find this template in the `output-version` branch.__
-The second template defines an additional target, next to the two targets from the simple template. This third target redirects the standard output to a file called `output.txt`. In the end it runs the `diff` command on the expected_output.txt file and the generated `output.txt` file.
+The second template defines an additional target, next to the two targets from the simple template. This third target redirects the standard output to a file called `output.txt`. In the end it runs the `diff` command on the expected_output.txt file and the generated `output.txt` file and leaves the output of the diff command in a file called `diff.txt`.
 
 # Installation
 To install the template(s), simply move the encolsing directory to `~/Library/Developer/Xcode/Templates/Custom/`. If it does not exist yet, you'll have to create it. The easiest way to keep the templates up to date is to clone this repository in that directory.
