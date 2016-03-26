@@ -36,53 +36,10 @@
 				</dict>
 			</array>
 		</dict>
-		<dict>
-			<key>TargetIdentifier</key>
-			<string>com.rugenheidbuchel.dt.competitiveProgrammingCommandLineToolTargetUsingInputFile</string>
-			<key>ProductType</key>
-			<string>com.apple.product-type.tool</string>
-			<key>SharedSettings</key>
-			<dict>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>BuildPhases</key>
-			<array>
-				<dict>
-					<key>Class</key>
-					<string>Sources</string>
-				</dict>
-				<dict>
-					<key>Class</key>
-					<string>Frameworks</string>
-				</dict>
-				<dict>
-					<key>DstPath</key>
-					<string></string>
-					<key>DstSubfolderSpec</key>
-					<string>16</string>
-					<key>RunOnlyForDeploymentPostprocessing</key>
-					<string>NO</string>
-					<key>Class</key>
-					<string>CopyFiles</string>
-				</dict>
-			</array>
-			<key>Name</key>
-			<string>___PACKAGENAME___ (Using input.txt)</string>
-			<key>Configurations</key>
-			<dict>
-				<key>Debug</key>
-				<dict>
-					<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-					<string>USE_INPUT_FILE=1 $(inherited)</string>
-				</dict>
-			</dict>
-		</dict>
 	</array>
 	<key>Nodes</key>
 	<array>
 		<string>main.cpp</string>
-		<string>input.txt</string>
 	</array>
 	<key>Concrete</key>
 	<true/>
@@ -93,6 +50,259 @@
 		<string>com.apple.dt.unit.base</string>
 		<string>com.apple.dt.unit.osxBase</string>
 	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>templateType</string>
+			<key>Name</key>
+			<string>Supported targets:</string>
+			<key>Description</key>
+			<string>Indicates what targets are added to provide additional testing functionality. &quot;Input&quot; adds a target that reads from an input file. &quot;Input and output&quot; reads from an input file, writes to an output file and compares the output with expected output.</string>
+			<key>NotPersisted</key>
+			<false/>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Default</key>
+			<string>Input</string>
+			<key>Values</key>
+			<array>
+				<string>None</string>
+				<string>Input</string>
+				<string>Input and output</string>
+			</array>
+			<key>Units</key>
+			<dict>
+				<key>Input</key>
+				<dict>
+					<key>Targets</key>
+					<array>
+						<dict>
+							<key>TargetIdentifier</key>
+							<string>com.rugenheidbuchel.dt.competitiveProgrammingCommandLineToolTarget</string>
+							<key>ProductType</key>
+							<string>com.apple.product-type.tool</string>
+							<key>SharedSettings</key>
+							<dict>
+								<key>PRODUCT_NAME</key>
+								<string>$(TARGET_NAME)</string>
+							</dict>
+							<key>BuildPhases</key>
+							<array>
+								<dict>
+									<key>Class</key>
+									<string>Sources</string>
+								</dict>
+								<dict>
+									<key>Class</key>
+									<string>Frameworks</string>
+								</dict>
+								<dict>
+									<key>DstPath</key>
+									<string></string>
+									<key>DstSubfolderSpec</key>
+									<string>16</string>
+									<key>RunOnlyForDeploymentPostprocessing</key>
+									<string>NO</string>
+									<key>Class</key>
+									<string>CopyFiles</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>TargetIdentifier</key>
+							<string>com.rugenheidbuchel.dt.competitiveProgrammingCommandLineToolTargetUsingInputFile</string>
+							<key>ProductType</key>
+							<string>com.apple.product-type.tool</string>
+							<key>SharedSettings</key>
+							<dict>
+								<key>PRODUCT_NAME</key>
+								<string>$(TARGET_NAME)</string>
+							</dict>
+							<key>BuildPhases</key>
+							<array>
+								<dict>
+									<key>Class</key>
+									<string>Sources</string>
+								</dict>
+								<dict>
+									<key>Class</key>
+									<string>Frameworks</string>
+								</dict>
+								<dict>
+									<key>DstPath</key>
+									<string></string>
+									<key>DstSubfolderSpec</key>
+									<string>16</string>
+									<key>RunOnlyForDeploymentPostprocessing</key>
+									<string>NO</string>
+									<key>Class</key>
+									<string>CopyFiles</string>
+								</dict>
+							</array>
+							<key>Name</key>
+							<string>___PACKAGENAME___ (Using input.txt)</string>
+							<key>Configurations</key>
+							<dict>
+								<key>Debug</key>
+								<dict>
+									<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+									<string>USE_INPUT_FILE=1 $(inherited)</string>
+								</dict>
+							</dict>
+						</dict>
+					</array>
+					<key>Nodes</key>
+					<array>
+						<string>input.txt</string>
+					</array>
+					<key>Definitions</key>
+					<dict>
+						<key>main.cpp</key>
+						<dict>
+							<key>Path</key>
+							<string>main_input_version.cpp</string>
+						</dict>
+					</dict>
+				</dict>
+				<key>Input and output</key>
+				<dict>
+					<key>Targets</key>
+					<array>
+						<dict>
+							<key>TargetIdentifier</key>
+							<string>com.rugenheidbuchel.dt.competitiveProgrammingCommandLineToolTarget</string>
+							<key>ProductType</key>
+							<string>com.apple.product-type.tool</string>
+							<key>SharedSettings</key>
+							<dict>
+								<key>PRODUCT_NAME</key>
+								<string>$(TARGET_NAME)</string>
+							</dict>
+							<key>BuildPhases</key>
+							<array>
+								<dict>
+									<key>Class</key>
+									<string>Sources</string>
+								</dict>
+								<dict>
+									<key>Class</key>
+									<string>Frameworks</string>
+								</dict>
+								<dict>
+									<key>DstPath</key>
+									<string></string>
+									<key>DstSubfolderSpec</key>
+									<string>16</string>
+									<key>RunOnlyForDeploymentPostprocessing</key>
+									<string>NO</string>
+									<key>Class</key>
+									<string>CopyFiles</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>TargetIdentifier</key>
+							<string>com.rugenheidbuchel.dt.competitiveProgrammingCommandLineToolTargetUsingInputFile</string>
+							<key>ProductType</key>
+							<string>com.apple.product-type.tool</string>
+							<key>SharedSettings</key>
+							<dict>
+								<key>PRODUCT_NAME</key>
+								<string>$(TARGET_NAME)</string>
+							</dict>
+							<key>BuildPhases</key>
+							<array>
+								<dict>
+									<key>Class</key>
+									<string>Sources</string>
+								</dict>
+								<dict>
+									<key>Class</key>
+									<string>Frameworks</string>
+								</dict>
+								<dict>
+									<key>DstPath</key>
+									<string></string>
+									<key>DstSubfolderSpec</key>
+									<string>16</string>
+									<key>RunOnlyForDeploymentPostprocessing</key>
+									<string>NO</string>
+									<key>Class</key>
+									<string>CopyFiles</string>
+								</dict>
+							</array>
+							<key>Name</key>
+							<string>___PACKAGENAME___ (Using input.txt)</string>
+							<key>Configurations</key>
+							<dict>
+								<key>Debug</key>
+								<dict>
+									<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+									<string>USE_INPUT_FILE=1 $(inherited)</string>
+								</dict>
+							</dict>
+						</dict>
+						<dict>
+							<key>TargetIdentifier</key>
+							<string>com.rugenheidbuchel.dt.competitiveProgrammingCommandLineToolTargetUsingInputAndOutputFile</string>
+							<key>ProductType</key>
+							<string>com.apple.product-type.tool</string>
+							<key>SharedSettings</key>
+							<dict>
+								<key>PRODUCT_NAME</key>
+								<string>$(TARGET_NAME)</string>
+							</dict>
+							<key>BuildPhases</key>
+							<array>
+								<dict>
+									<key>Class</key>
+									<string>Sources</string>
+								</dict>
+								<dict>
+									<key>Class</key>
+									<string>Frameworks</string>
+								</dict>
+								<dict>
+									<key>DstPath</key>
+									<string></string>
+									<key>DstSubfolderSpec</key>
+									<string>16</string>
+									<key>RunOnlyForDeploymentPostprocessing</key>
+									<string>NO</string>
+									<key>Class</key>
+									<string>CopyFiles</string>
+								</dict>
+							</array>
+							<key>Name</key>
+							<string>___PACKAGENAME___ (Using input.txt and output.txt)</string>
+							<key>Configurations</key>
+							<dict>
+								<key>Debug</key>
+								<dict>
+									<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+									<string>USE_INPUT_FILE=1 USE_OUTPUT_FILE=1 $(inherited)</string>
+								</dict>
+							</dict>
+						</dict>
+					</array>
+					<key>Nodes</key>
+					<array>
+						<string>input.txt</string>
+						<string>expected_output.txt</string>
+					</array>
+					<key>Definitions</key>
+					<dict>
+						<key>main.cpp</key>
+						<dict>
+							<key>Path</key>
+							<string>main_output_version.cpp</string>
+						</dict>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</array>
 	<key>Definitions</key>
 	<dict>
 		<key>main.cpp</key>
@@ -102,8 +312,8 @@
 		</dict>
 	</dict>
 	<key>Identifier</key>
-	<string>com.rugenheidbuchel.dt.unit.competitiveProgrammingCommandLineTool</string>
+	<string>com.rugenheidbuchel.dt.unit.competitiveProgrammingCommandLineToolOutputVersion</string>
 	<key>Description</key>
-	<string>This template creates a command-line tool for competitive programming. It provides two targets: one to test manually and one to test from an input file.</string>
+	<string>This template creates a command-line tool for competitive programming. You can choose to add targets to read from an input file and write to an output file, comparing the output to the expected output.</string>
 </dict>
 </plist>
