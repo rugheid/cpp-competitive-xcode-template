@@ -2,60 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Kind</key>
-	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
-	<key>Identifier</key>
-	<string>com.rugenheidbuchel.dt.unit.competitiveProgrammingCommandLineTool</string>
-	<key>Ancestors</key>
-	<array>
-		<string>com.apple.dt.unit.base</string>
-		<string>com.apple.dt.unit.osxBase</string>
-	</array>
-	<key>Concrete</key>
-	<true/>
-	<key>Description</key>
-	<string>This template creates a command-line tool for competitive programming. It provides two targets. The first target is a regular command-line tool. The second target redirects the stadard input to read from an input file. This way you can easily switch between testing with manual input or from an input file.</string>
 	<key>Targets</key>
 	<array>
 		<dict>
-			<key>ProductType</key>
-			<string>com.apple.product-type.tool</string>
 			<key>TargetIdentifier</key>
 			<string>com.rugenheidbuchel.dt.competitiveProgrammingCommandLineToolTarget</string>
-			<key>BuildPhases</key>
-			<array>
-				<dict>
-					<key>Class</key>
-					<string>Sources</string>
-				</dict>
-				<dict>
-					<key>Class</key>
-					<string>Frameworks</string>
-				</dict>
-				<dict>
-					<key>Class</key>
-					<string>CopyFiles</string>
-					<key>DstPath</key>
-					<string></string>
-					<key>DstSubfolderSpec</key>
-					<string>16</string>
-					<key>RunOnlyForDeploymentPostprocessing</key>
-					<string>NO</string>
-				</dict>
-			</array>
+			<key>ProductType</key>
+			<string>com.apple.product-type.tool</string>
 			<key>SharedSettings</key>
 			<dict>
 				<key>PRODUCT_NAME</key>
 				<string>$(TARGET_NAME)</string>
 			</dict>
-		</dict>
-		<dict>
-			<key>Name</key>
-			<string>___PACKAGENAME___ (Using input.txt)</string>
-			<key>ProductType</key>
-			<string>com.apple.product-type.tool</string>
-			<key>TargetIdentifier</key>
-			<string>com.rugenheidbuchel.dt.competitiveProgrammingCommandLineToolTargetUsingInputFile</string>
 			<key>BuildPhases</key>
 			<array>
 				<dict>
@@ -67,28 +25,57 @@
 					<string>Frameworks</string>
 				</dict>
 				<dict>
-					<key>Class</key>
-					<string>CopyFiles</string>
 					<key>DstPath</key>
 					<string></string>
 					<key>DstSubfolderSpec</key>
 					<string>16</string>
 					<key>RunOnlyForDeploymentPostprocessing</key>
 					<string>NO</string>
+					<key>Class</key>
+					<string>CopyFiles</string>
 				</dict>
 			</array>
+		</dict>
+		<dict>
+			<key>TargetIdentifier</key>
+			<string>com.rugenheidbuchel.dt.competitiveProgrammingCommandLineToolTargetUsingInputFile</string>
+			<key>ProductType</key>
+			<string>com.apple.product-type.tool</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>BuildPhases</key>
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>Sources</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>Frameworks</string>
+				</dict>
+				<dict>
+					<key>DstPath</key>
+					<string></string>
+					<key>DstSubfolderSpec</key>
+					<string>16</string>
+					<key>RunOnlyForDeploymentPostprocessing</key>
+					<string>NO</string>
+					<key>Class</key>
+					<string>CopyFiles</string>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>___PACKAGENAME___ (Using input.txt)</string>
 			<key>Configurations</key>
 			<dict>
 				<key>Debug</key>
 				<dict>
 					<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-					<key>USE_INPUT_FILE=1 $(inherited)</key>
+					<string>USE_INPUT_FILE=1 $(inherited)</string>
 				</dict>
-			</dict>
-			<key>SharedSettings</key>
-			<dict>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
 			</dict>
 		</dict>
 	</array>
@@ -96,6 +83,15 @@
 	<array>
 		<string>main.cpp</string>
 		<string>input.txt</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.base</string>
+		<string>com.apple.dt.unit.osxBase</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
@@ -105,5 +101,9 @@
 			<string>main.cpp</string>
 		</dict>
 	</dict>
+	<key>Identifier</key>
+	<string>com.rugenheidbuchel.dt.unit.competitiveProgrammingCommandLineTool</string>
+	<key>Description</key>
+	<string>This template creates a command-line tool for competitive programming. It provides two targets: one to test manually and one to test from an input file.</string>
 </dict>
 </plist>
