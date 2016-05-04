@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include "codingmacros.h"
 
 int main(int argc, const char * argv[]) {
     
