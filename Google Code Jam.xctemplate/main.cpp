@@ -12,7 +12,8 @@
 #include <set>
 #include <map>
 
-// Shortcuts for "common" data types in contests typedef long long ll;
+// Shortcuts for "common" data types in contests
+typedef long long ll;
 typedef vector<int> vi;
 typedef pair<int, int> ii;
 typedef vector<ii> vii;
