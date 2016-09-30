@@ -82,7 +82,6 @@
 	<key>Nodes</key>
 	<array>
 		<string>main.cpp</string>
-		<string>codingmacros.h</string>
 		<string>example_input.txt</string>
 	</array>
 	<key>Concrete</key>
@@ -100,11 +99,6 @@
 		<dict>
 			<key>Path</key>
 			<string>main.cpp</string>
-		</dict>
-		<key>codingmacros.h</key>
-		<dict>
-			<key>Path</key>
-			<string>codingmacros.h</string>
 		</dict>
 	</dict>
 	<key>Identifier</key>
