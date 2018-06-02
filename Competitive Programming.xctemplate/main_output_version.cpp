@@ -15,6 +15,7 @@
 #include <algorithm>
 #include <cmath>
 #include <iomanip>
+#include <string.h>
 
 // Shortcuts for "common" data types in contests
 typedef long long ll;
