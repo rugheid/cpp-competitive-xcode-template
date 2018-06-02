@@ -3,7 +3,6 @@
 //  ___PACKAGENAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//___COPYRIGHT___
 //
 
 #include <iostream>
@@ -11,12 +10,20 @@
 #include <string>
 #include <set>
 #include <map>
+#include <queue>
+#include <deque>
+#include <algorithm>
+#include <cmath>
+#include <iomanip>
 
 // Shortcuts for "common" data types in contests
 typedef long long ll;
+typedef unsigned long long ull;
 typedef std::vector<int> vi;
-typedef std::pair<int, int> ii;
-typedef std::vector<ii> vii;
+typedef std::vector<ll> vll;
+typedef std::vector<ull> vull;
+typedef std::pair<int, int> pii;
+typedef std::vector<pii> vpii;
 typedef std::set<int> si;
 typedef std::map<std::string, int> msi;
 
@@ -41,6 +48,8 @@ for (msi::iterator it = (c).begin(); it != (c).end(); it++)
 
 #pragma mark - MAIN
 
+using namespace std;
+
 size_t T;
 
 int main(int argc, const char * argv[]) {
@@ -48,6 +57,10 @@ int main(int argc, const char * argv[]) {
     #ifdef USE_INPUT_FILE
     freopen("example_input.txt", "r", stdin);
     #endif
+
+    std::ios::sync_with_stdio(false);
+    cout << fixed << setprecision(12);
+    cin.tie(NULL);
     
     std::cin >> T;
     for (size_t caseNumber = 0; caseNumber < T; caseNumber++) {
